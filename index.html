@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Building A Unified AI-centric Language System: analysis, framework and future work">
+  <meta name="keywords" content="AI Language, LLM, AI-centric">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Building A Unified AI-centric Language System</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'YOUR-GA-ID');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="#">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <!-- You can add links to related research here -->
+          <a class="navbar-item" href="https://huggingface.co/spaces/wxcyn/Video-Analysis-Public">
+            Video Analysis Public
+          </a>
+          <a class="navbar-item" href="#">
+            Related Project 1
+          </a>
+          <a class="navbar-item" href="#">
+            Related Project 2
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Building A Unified AI-centric Language System</h1>
+          <div class="subtitle is-4 publication-title">Analysis, Framework and Future Work</div>
+          
+          <img src="./static/images/teaser.gif" alt="Teaser animation">
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Edward Hong Wang</a>,</span>
+            <span class="author-block">
+              <a href="#">Cynthia Xin Wen</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Harvard University,</span>
+            <span class="author-block">The University of Sydney</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link - now using arXiv link for both buttons -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2502.04488"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2502.04488"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/framework.png" alt="AI-Friendly Language Implementation Framework">
+      <h2 class="subtitle has-text-centered">
+        A unified AI-centric language system that offers a more concise, unambiguous, and computationally efficient alternative to traditional human languages.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent advancements in large language models have demonstrated that extended inference—through techniques can markedly improve performance, yet these gains come with increased computational costs and the propagation of inherent biases found in natural languages. This paper explores the design of a unified AI-centric language system that addresses these challenges by offering a more concise, unambiguous, and computationally efficient alternative to traditional human languages.
+          </p>
+          <p>
+            We analyze the limitations of natural language—such as gender bias, morphological irregularities, and contextual ambiguities—and examine how these issues are exacerbated within current Transformer architectures, where redundant attention heads and token inefficiencies prevail. Drawing on insights from emergent artificial communication systems and constructed languages like Esperanto and Lojban, we propose a framework that translates diverse natural language inputs into a streamlined AI-friendly language, enabling more efficient model training and inference while reducing memory footprints.
+          </p>
+          <p>
+            Finally, we outline a pathway for empirical validation through controlled experiments, paving the way for a universal interchange format that could revolutionize AI-to-AI and human-to-AI interactions by enhancing clarity, fairness, and overall performance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Comparison figure -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Human Language vs. AI Language Requirements</h2>
+        <div class="content">
+          <img src="./static/images/comparison.png" alt="Comparison of human and AI language requirements">
+          <p class="has-text-justified">
+            Human communication requires speech, shared cultural context, and the capacity to negotiate meaning over centuries of gradual change. In contrast, AI systems do not inherently require spoken forms or social acceptance. The barest form of AI "language" might be a symbolic code—potentially even a single unpronounceable symbol—sufficient for exchanging precise information between machines. This radical difference in requirements underlies many of the inefficiencies in forcing AI systems to parse and produce human languages.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Comparison figure -->
+
+    <!-- Framework figure -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Proposed Implementation Framework</h2>
+        <div class="content">
+          <img src="./static/images/framework.png" alt="AI-Friendly Language Implementation Framework">
+          <p class="has-text-justified">
+            Our proposed framework converts natural language into an AI-friendly language for efficient processing, then translates responses back to natural language for users. This approach reduces computational costs while maintaining or improving accuracy and fairness.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Framework figure -->
+
+    <!-- Key sections -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Key Findings</h2>
+        
+        <h3 class="title is-4">Language Biases and Irregularities</h3>
+        <div class="content has-text-justified">
+          <p>
+            Artificial Intelligence models that process human language inherit many of the biases, irregularities, and ambiguities of those languages. This not only skews AI outputs but also raises fairness and interpretability concerns. These include gendered language bias, plural forms and morphological complexity, and context dependence.
+          </p>
+        </div>
+
+        <h3 class="title is-4">Language Structure and Multi-Head Attention</h3>
+        <div class="content has-text-justified">
+          <p>
+            Recent work on Transformers reveals how AI models learn and handle linguistic structure. Many attention heads appear redundant, with research showing that a large percentage can be removed after training without major performance drops. These findings suggest that a more structured, unambiguous language could enable even further model compression.
+          </p>
+        </div>
+
+        <h3 class="title is-4">Toward an AI-Friendly Language</h3>
+        <div class="content has-text-justified">
+          <p>
+            Drawing from constructed languages like Esperanto (designed for simplicity and neutrality) and Lojban (developed for logical clarity), we propose key principles for an AI-centric language:
+          </p>
+          <ul>
+            <li>Clarity and unambiguity - one parse per sentence</li>
+            <li>Consistency and regularity - eliminating irregular morphology</li>
+            <li>Conciseness and efficiency - fewer tokens for faster computation</li>
+            <li>Unlimited or adaptable vocabulary - avoiding polysemy</li>
+            <li>Reduced context dependence - minimizing ambiguous references</li>
+            <li>Computational efficiency - designed for fast, deterministic parsing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ Key sections -->
+
+    <!-- Future work -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Future Work</h2>
+        <div class="content has-text-justified">
+          <p>
+            To rigorously assess the benefits of an AI-centric language, future work should include constructing a small-scale "toy" language featuring a reduced grammar and systematically defined vocabulary. Two parallel neural models of equal size would be trained: one on this toy language and one on English, using identical architectures and hyperparameters.
+          </p>
+          <p>
+            Comparing their performance on tasks such as question answering, text classification, and summarization would illuminate whether the specialized language yields measurable efficiency gains—specifically, fewer tokens, lower inference time, and reduced memory footprint—while maintaining or improving accuracy and fairness.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Future work -->
+
+    <!-- Related Work. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Related Work</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Our research builds upon several key areas in language model development and linguistic theory:
+          </p>
+          <p>
+            <a href="#">Chain of thought prompting</a> (Wei et al., 2022) introduced methods for improving LLM reasoning through extended inference steps.
+          </p>
+          <p>
+            <a href="#">Multi-head attention analysis</a> (Michel et al., 2019; Voita et al., 2019) demonstrated that many attention heads in Transformer models can be pruned without significant performance loss.
+          </p>
+          <p>
+            Research on <a href="#">emergent communication in AI systems</a> has shown how artificial agents can develop their own communication protocols when working together on specific tasks.
+          </p>
+          <p>
+            Work on <a href="#">bias in large language models</a> (Bolukbasi et al., 2016; Guo et al., 2024) has highlighted how AI systems inherit and sometimes amplify biases present in human languages.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Related Work. -->
+
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{wang2025building,
+  author    = {Wang, Edward Hong and Wen, Cynthia Xin},
+  title     = {Building A Unified AI-centric Language System: analysis, framework and future work},
+  journal   = {arXiv preprint arXiv:2502.04488},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://arxiv.org/abs/2502.04488" title="Paper">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website template is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
